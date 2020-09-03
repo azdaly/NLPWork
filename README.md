@@ -28,6 +28,7 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 - [Distilbert blog post](https://medium.com/huggingface/distilbert-8cf3380435b5)
 - [Understanding emojis](https://medium.com/huggingface/understanding-emotions-from-keras-to-pytorch-3ccb61d5a983)
 - [Training models on GPUs](https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255)
+- [Tokenizer summary](https://huggingface.co/transformers/master/tokenizer_summary.html)
 
 <a name="ic"/>
 
@@ -57,6 +58,8 @@ Interestingly [this paper](https://arxiv.org/abs/1907.11692) found that BERT was
       but this doesn't:  
       ```DistilBertTokenizer.from_pretrained(./dir_with_tokenizer_model)```   
       Using DistilBertTokenizer errors out saying that the tokenizer is not a part of the models on HuggingFace, and it requires a vocab.txt file, though the work in the tutorial only generates the vocab.json and merges.txt file (helpfully explained [here](https://github.com/huggingface/transformers/issues/1083#issuecomment-524303077)).
+- [X] What's the difference between [this](https://github.com/huggingface/transformers/blob/master/notebooks/01-training-tokenizers.ipynb) tokenizer initialization and [this one?](https://huggingface.co/blog/how-to-train)?  
+      - Looking at the ByteLevelBPETokenizer class, it becomes apparent that all of the items explicitly stated [here](https://github.com/huggingface/transformers/blob/master/notebooks/01-training-tokenizers.ipynb) are simply under the hood [here](https://huggingface.co/blog/how-to-train) when initializing ByteLevelBPETokenizer with a couple extra flags.
 
 <a name="pwr"/>
 
