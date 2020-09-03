@@ -5,6 +5,8 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 ## Table of contents:
 [Important repos/packages/containers](#irpc)  
 [Helpful tutorials/blog posts/videos/slide decks](#htbpvsd)  
+[Important concepts](#ic)
+[Questions I would like to have answered](#qiwltha)
 
 <a name="irpc"/>
 
@@ -20,6 +22,8 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 
 - [Hugging Face Tutorial](https://huggingface.co/blog/how-to-train) - a helpful tutorial to get started, though it's lacking key parts, such as how to build the config files, how to integrate the new classes into the all-important run_language_modeling.py file, etc. [This](https://github.com/huggingface/transformers/issues/3192) Github issue helpfully points out many of the problems and links to [this](https://zablo.net/blog/post/training-roberta-from-scratch-the-missing-guide-polish-language-model/) far more helpful tutorial.
 - [Comprehensive Hugging Face slide deck](https://docs.google.com/presentation/d/1fIhGikFPnb7G5kr58OvYC3GN4io7MznnM0aAgadvJfc/edit#slide=id.g5888218f39_50_205) - this slide deck is linked to [this](https://www.youtube.com/watch?v=rEGB7-FlPRs) video that talks broadly about transfer learning, and Hugging Face's use of it.
+
+<a name="ic"/>
 
 ## Important concepts:
 
@@ -37,6 +41,8 @@ Starting with the [tokenizer](https://huggingface.co/transformers/main_classes/t
 #### Deciding on the down-stream model to use:
 
 Interestingly [this paper](https://arxiv.org/abs/1907.11692) found that BERT was *under*trained, and that training it up a bit more (thus resulting in [RoBERTa](https://huggingface.co/transformers/model_doc/roberta.html)) got great results. Consider using that instead of BERT.
+
+<a name="qiwltha"/>
 
 ## Questions I would like to have answered:
 
