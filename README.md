@@ -7,6 +7,7 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 [Helpful tutorials/blog posts/videos/slide decks](#htbpvsd)  
 
 <a name="irpc"/>
+
 ## Important repos/packages/containers:
 
 - [Hugging Face](https://github.com/huggingface), obviously
@@ -14,6 +15,7 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 - [Sentence-level transformers](https://github.com/UKPLab/sentence-transformers)
 
 <a name="htbpvsd"/>
+
 ## Helpful tutorials/blog posts/videos/slide decks:
 
 - [Hugging Face Tutorial](https://huggingface.co/blog/how-to-train) - a helpful tutorial to get started, though it's lacking key parts, such as how to build the config files, how to integrate the new classes into the all-important run_language_modeling.py file, etc. [This](https://github.com/huggingface/transformers/issues/3192) Github issue helpfully points out many of the problems and links to [this](https://zablo.net/blog/post/training-roberta-from-scratch-the-missing-guide-polish-language-model/) far more helpful tutorial.
