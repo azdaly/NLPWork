@@ -2,20 +2,22 @@
 
 Collecting my thoughts surrounding NLP (specifically related to the coupon project).
 
-## Important Repos/Packages/Containers:
+## Table of contents:
+[Important repos/packages/containers](#irpc)  
+[Helpful tutorials/blog posts/videos/slide decks](#htbpvsd)  
+
+<a name="irpc"/>
+## Important repos/packages/containers:
 
 - [Hugging Face](https://github.com/huggingface), obviously
 - [Oscar](https://oscar-corpus.com/) - massive text dump
 - [Sentence-level transformers](https://github.com/UKPLab/sentence-transformers)
 
-## Helpful tutorials:
-
-**Tutorials I've tried:**
+<a name="htbpvsd"/>
+## Helpful tutorials/blog posts/videos/slide decks:
 
 - [Hugging Face Tutorial](https://huggingface.co/blog/how-to-train) - a helpful tutorial to get started, though it's lacking key parts, such as how to build the config files, how to integrate the new classes into the all-important run_language_modeling.py file, etc. [This](https://github.com/huggingface/transformers/issues/3192) Github issue helpfully points out many of the problems and links to [this](https://zablo.net/blog/post/training-roberta-from-scratch-the-missing-guide-polish-language-model/) far more helpful tutorial.
-
-**Tutorials I haven't tried:**
-
+- [Comprehensive Hugging Face slide deck](https://docs.google.com/presentation/d/1fIhGikFPnb7G5kr58OvYC3GN4io7MznnM0aAgadvJfc/edit#slide=id.g5888218f39_50_205) - this slide deck is linked to [this](https://www.youtube.com/watch?v=rEGB7-FlPRs) video that talks broadly about transfer learning, and Hugging Face's use of it.
 
 ## Important concepts:
 
@@ -33,3 +35,11 @@ Starting with the [tokenizer](https://huggingface.co/transformers/main_classes/t
 #### Deciding on the down-stream model to use:
 
 Interestingly [this paper](https://arxiv.org/abs/1907.11692) found that BERT was *under*trained, and that training it up a bit more (thus resulting in [RoBERTa](https://huggingface.co/transformers/model_doc/roberta.html)) got great results. Consider using that instead of BERT.
+
+## Questions I would like to have answered:
+
+- [ ] When following [this](https://huggingface.co/blog/how-to-train) tutorial, why does this work:  
+      ```RobertaTokenizer.from_pretrained(./dir_with_tokenizer_model)```  
+      but this doesn't:  
+      ```DistilBertTokenizer.from_pretrained(./dir_with_tokenizer_model)```   
+      Using DistilBertTokenizer errors out saying that the tokenizer is not a part of the models on HuggingFace, and it requires a vocab.txt file, though the work in the tutorial only generates the vocab.json and merges.txt file (helpfully explained [here](https://github.com/huggingface/transformers/issues/1083#issuecomment-524303077)).
