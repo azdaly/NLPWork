@@ -22,6 +22,7 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 
 - [Hugging Face Tutorial](https://huggingface.co/blog/how-to-train) - a helpful tutorial to get started, though it's lacking key parts, such as how to build the config files, how to integrate the new classes into the all-important run_language_modeling.py file, etc. [This](https://github.com/huggingface/transformers/issues/3192) Github issue helpfully points out many of the problems and links to [this](https://zablo.net/blog/post/training-roberta-from-scratch-the-missing-guide-polish-language-model/) far more helpful tutorial.
 - [Comprehensive Hugging Face slide deck](https://docs.google.com/presentation/d/1fIhGikFPnb7G5kr58OvYC3GN4io7MznnM0aAgadvJfc/edit#slide=id.g5888218f39_50_205) - this slide deck is linked to [this](https://www.youtube.com/watch?v=rEGB7-FlPRs) video that talks broadly about transfer learning, and Hugging Face's use of it.
+- [Repo A](https://github.com/keon/awesome-nlp) and [Repo B](https://nlpprogress.com/) intended to keep on track with the current advances in NLP. While these are repos, they're not software, which is why I'm putting them here.
 
 <a name="ic"/>
 
