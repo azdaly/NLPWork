@@ -7,6 +7,7 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
  * [Helpful tutorials/blog posts/videos/slide decks](#htbpvsd)  
  * [Important concepts](#ic)  
  * [Questions I would like to have answered](#qiwltha)   
+ * [Publications worth reading](#pwr)   
 
 <a name="irpc"/>
 
@@ -55,3 +56,9 @@ Interestingly [this paper](https://arxiv.org/abs/1907.11692) found that BERT was
       but this doesn't:  
       ```DistilBertTokenizer.from_pretrained(./dir_with_tokenizer_model)```   
       Using DistilBertTokenizer errors out saying that the tokenizer is not a part of the models on HuggingFace, and it requires a vocab.txt file, though the work in the tutorial only generates the vocab.json and merges.txt file (helpfully explained [here](https://github.com/huggingface/transformers/issues/1083#issuecomment-524303077)).
+
+<a name="pwr"/>
+
+## Publications worth reading:
+
+ * [Black sheep paper](https://dl.acm.org/doi/abs/10.1145/2509558.2509563?casa_token=xByjqpBg-PQAAAAA%3AnQlfSI4-OdkAvaD9r8kDz4ZMunYV1lfxE2d4-Or22zJZrOEZ6rwXPv3tlBdfFZ5K84S8OjGhSrhxcA) - Paper discussing reporting bias, in which we don't talk about the obvious, thus preventing models from learning basic facts (e.g. sheep are generally white).
