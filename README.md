@@ -25,6 +25,7 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 - [Repo A](https://github.com/keon/awesome-nlp) and [Repo B](https://nlpprogress.com/) intended to keep on track with the current advances in NLP. While these are repos, they're not software, which is why I'm putting them here.
 - [Distilbert blog post](https://medium.com/huggingface/distilbert-8cf3380435b5)
 - [Understanding emojis](https://medium.com/huggingface/understanding-emotions-from-keras-to-pytorch-3ccb61d5a983)
+- [Training models on GPUs](https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255)
 
 <a name="ic"/>
 
