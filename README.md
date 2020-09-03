@@ -5,8 +5,8 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 ## Table of contents:
 [Important repos/packages/containers](#irpc)  
 [Helpful tutorials/blog posts/videos/slide decks](#htbpvsd)  
-[Important concepts](#ic)
-[Questions I would like to have answered](#qiwltha)
+[Important concepts](#ic)  
+[Questions I would like to have answered](#qiwltha)   
 
 <a name="irpc"/>
 
