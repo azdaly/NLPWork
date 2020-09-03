@@ -51,14 +51,14 @@ Interestingly [this paper](https://arxiv.org/abs/1907.11692) found that BERT was
 
 <a name="qiwltha"/>
 
-## Questions I would like to have answered:
-
-- [ ] When following [this](https://huggingface.co/blog/how-to-train) tutorial, why does this work:  
+## Questions I would like to have answered:  
+  
+* When following [this](https://huggingface.co/blog/how-to-train) tutorial, why does this work:  
       ```RobertaTokenizer.from_pretrained(./dir_with_tokenizer_model)```  
       but this doesn't:  
       ```DistilBertTokenizer.from_pretrained(./dir_with_tokenizer_model)```   
       Using DistilBertTokenizer errors out saying that the tokenizer is not a part of the models on HuggingFace, and it requires a vocab.txt file, though the work in the tutorial only generates the vocab.json and merges.txt file (helpfully explained [here](https://github.com/huggingface/transformers/issues/1083#issuecomment-524303077)).
-- [X] What's the difference between [this](https://github.com/huggingface/transformers/blob/master/notebooks/01-training-tokenizers.ipynb) tokenizer initialization and [this one?](https://huggingface.co/blog/how-to-train)?  
+* What's the difference between [this](https://github.com/huggingface/transformers/blob/master/notebooks/01-training-tokenizers.ipynb) tokenizer initialization and [this one?](https://huggingface.co/blog/how-to-train)?  
       - Looking at the ByteLevelBPETokenizer class, it becomes apparent that all of the items explicitly stated [here](https://github.com/huggingface/transformers/blob/master/notebooks/01-training-tokenizers.ipynb) are simply under the hood [here](https://huggingface.co/blog/how-to-train) when initializing ByteLevelBPETokenizer with a couple extra flags.
 
 <a name="pwr"/>
