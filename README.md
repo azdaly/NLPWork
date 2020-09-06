@@ -48,6 +48,12 @@ Starting with the [tokenizer](https://huggingface.co/transformers/main_classes/t
 #### Deciding on the down-stream model to use:
 
 Interestingly [this paper](https://arxiv.org/abs/1907.11692) found that BERT was *under*trained, and that training it up a bit more (thus resulting in [RoBERTa](https://huggingface.co/transformers/model_doc/roberta.html)) got great results. Consider using that instead of BERT.
+  
+#### Sentence-level embedding:  
+
+ * [Sentence-BERT](https://github.com/UKPLab/sentence-transformers) - A method of generating sentence embeddings in which sentences with similar meaning will be close together in high-dimensional space.  
+ * [Simply using CLS tags is remarkably effective.](https://github.com/huggingface/transformers/issues/1950#issuecomment-558770861). Specifically [this](https://arxiv.org/pdf/1810.04805.pdf) paper says how the token representations can be used for token-level tasks such as question-answering and sentence tagging, whereas the CLS tag can be used for things like classification.
+ * [bert-as-service](https://github.com/hanxiao/bert-as-service) - A far more popular (stars-wise) method of sentence-level embeddings than sentence Bert.
 
 <a name="qiwltha"/>
 
