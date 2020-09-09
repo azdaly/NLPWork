@@ -29,6 +29,7 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 - [Understanding emojis](https://medium.com/huggingface/understanding-emotions-from-keras-to-pytorch-3ccb61d5a983)
 - [Training models on GPUs](https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255)
 - [Tokenizer summary](https://huggingface.co/transformers/master/tokenizer_summary.html)
+- [Jay Alammar blog](http://jalammar.github.io/) - incredibly helpful blog visualizing many key concepts of NLP and MLMs. 
 
 <a name="ic"/>
 
