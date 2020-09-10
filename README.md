@@ -30,6 +30,7 @@ Collecting my thoughts surrounding NLP (specifically related to the coupon proje
 - [Training models on GPUs](https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255)
 - [Tokenizer summary](https://huggingface.co/transformers/master/tokenizer_summary.html)
 - [Jay Alammar blog](http://jalammar.github.io/) - incredibly helpful blog visualizing many key concepts of NLP and MLMs. 
+- [Approachable introduction to BERT](https://yashuseth.blog/2019/06/12/bert-explained-faqs-understand-bert-working/)
 
 <a name="ic"/>
 
